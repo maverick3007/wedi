@@ -378,7 +378,7 @@
     display: table-cell;
     vertical-align: middle;
 	}
-  .search, .account, .cart {
+  .search, .account, .cart, .login {
     display: inline-block;
     position: relative;
     width: $navbar-tools-size;
@@ -417,10 +417,15 @@
       margin-top: -10px;
       content: '';
     }
+
+
   }
   
   // Search
   .search  > i { line-height: $navbar-tools-size - 4; }
+
+  // Login
+  .login  > i { line-height: $navbar-tools-size - 4; }
   
   // Cart
   .cart {
@@ -566,7 +571,7 @@
     &.active > a { color: $nav-link-active-color; }
   }
   .toolbar {
-    .search, .account, .cart {
+    .search, .account, .cart, .login {
       border-color: rgba($white-color, .15);
       color: $white-color;
       &:hover { background-color: rgba($white-color, .07); }

@@ -268,3 +268,104 @@
           +submenu-component-item('typography.html', 'Typography')
           +submenu-component-item('video-player.html', 'Video Player')
           +submenu-component-item('widgets.html', 'Widgets')
+
+// Wedi-Off-Canvas-home Mobile Menu
+#mobile-menu-wedi-home.offcanvas-container
+  nav.offcanvas-menu
+    ul.menu
+      li
+        span
+          a(href='#') Home
+      li
+        span
+          a(href='#') Over Ons
+      li
+        span
+          a(href='#') Inloggen
+
+// Wedi-Off-Canvas Mobile Menu
+#mobile-menu-wedi.offcanvas-container
+  nav.offcanvas-menu
+    ul.menu
+      li
+        span
+          a(href='#') Home
+      li.has-children
+        span
+          a(href='#') Catalogus
+          span.sub-menu-toggle
+        ul.offcanvas-submenu
+          li.has-children
+            span
+              a(href='#') Slangklemmen
+              span.sub-menu-toggle
+            ul.offcanvas-submenu
+              li: a(href='#') Sneakers
+              li: a(href='#') Loafers
+              li: a(href='#') Boat Shoes
+              li: a(href='#') Sandals
+              li: a(href='#') View All
+          li.has-children
+            span
+              a(href='#') Kabelbinders
+              span.sub-menu-toggle
+            ul.offcanvas-submenu
+              li: a(href='#') Sandals
+              li: a(href='#') Flats
+              li: a(href='#') Sneakers
+              li: a(href='#') Heels
+              li: a(href='#') View All
+          li.has-children
+            span
+              a(href='#') Cable Connect and Protect
+              span.sub-menu-toggle
+            ul.offcanvas-submenu
+              li: a(href='#') Shirts &amp; Tops
+              li: a(href='#') Pants
+              li: a(href='#') Jackets
+              li: a(href='#') View All
+          li.has-children
+            span
+              a(href='#') Klemmen beugels en clips
+              span.sub-menu-toggle
+            ul.offcanvas-submenu
+              li: a(href='#') Dresses
+              li: a(href='#') Shirts &amp; Tops
+              li: a(href='#') Shorts
+              li: a(href='#') Swimwear
+              li: a(href='#') View All
+          li.has-children
+            span
+              a(href='#') Bags
+              span.sub-menu-toggle
+            ul.offcanvas-submenu
+              li: a(href='#') Handbags
+              li: a(href='#') Backpacks
+              li: a(href='#') Luggage
+              li: a(href='#') Wallets
+              li: a(href='#') View All
+          li.has-children
+            span
+              a(href='#') Wartels, moeren en stoppen
+              span.sub-menu-toggle
+            ul.offcanvas-submenu
+              li: a(href='#') Sunglasses
+              li: a(href='#') Hats
+              li: a(href='#') Watches
+              li: a(href='#') Jewelry
+              li: a(href='#') Belts
+              li: a(href='#') View All
+      li
+        span
+          a(href='#') Over Ons
+      li()&attributes((parentMenu === 'Account') ? {'class': 'has-children active'} : {'class': 'has-children'})
+        span
+          +menu-link('account-orders.html', 'Account')
+          span.sub-menu-toggle
+        ul.offcanvas-submenu
+          +submenu-item('account-login.html', 'Profiel')
+          +submenu-item('account-password-recovery.html', 'Bestellingen')
+      li
+        span
+          a(href='#') Log uit
+          

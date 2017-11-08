@@ -5,7 +5,7 @@ append config
   - var isPageTitle = false
   - var isHeader = false
   - var isFooter = false
-  - var isWediHeader = true
+  - var isWediHomeHeader = true
   - var isWediFooter = true
   - var parentMenu = 'Home'
   - var menuTitle = 'Featured Products Slider'
@@ -16,37 +16,48 @@ block content
     // Main Slider
     section.hero-slider(style='background-image: url(img/hero-slider/AdobeStock_99790554_Preview.jpeg);')
         .owl-carousel.large-controls.dots-inside(data-owl-carousel='{ "nav": true, "dots": true, "loop": true, "autoplay": true, "autoplayTimeout": 7000 }')
-
-
-    // Cats
-    section.container.padding-top-3x
-        h3.text-center.mb-30 Onze Catalogus
-        .row
-            .col-md-4.col-sm-6
-                .card.mb-30
-                a(href='shop-grid-ls.html').card-img-tiles
-                    .inner
-                    .main-img
-                        img(src='img/shop/prodcats/HGRA.jpg' alt='Category')
-                .card-body.text-center
-                    h4.card-title Slangklemmen
-                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
-            .col-md-4.col-sm-6
-                .card.mb-30
-                a(href='shop-grid-ls.html').card-img-tiles
-                    .inner
-                    .main-img
-                        img(src='img/shop/prodcats/HGRB.jpg' alt='Category')
-                .card-body.text-center
-                    h4.card-title Kabelbinders
-                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
-            .col-md-4.col-sm-6
-                .card.mb-30
-                a(href='shop-grid-ls.html').card-img-tiles
-                    .inner
-                    .main-img
-                        img(src='img/shop/prodcats/HGRC.jpg' alt='Category')
-                .card-body.text-center
-                    h4.card-title Cable Connect and Protect
-                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
+            .item
+                .container.padding-top-3x
+                    .row.justify-content-center.align-items-center
+                        .col-lg-5.col-md-6.padding-bottom-2x.text-md-left.text-center
+                            .from-bottom
+                                img(src='img/hero-slider/logowedi.png' alt='Weditrade').d-inline-block.w-400.mb-4
+                                .h2.text-white.text-normal.mb-2.pt-1 Assortimentdozen slangklemmen
+                            a(href='#').btn.btn-primary.scale-up.delay-1 bekijk
+                        .col-md-6.padding-bottom-2x.mb-3
+                            img(src='img/hero-slider/BannerWedi01.gif' alt='klemmen').d-block.mx-auto
+            .item
+                .container.padding-top-3x
+                    .row.justify-content-center.align-items-center
+                        .col-lg-5.col-md-6.padding-bottom-2x.text-md-left.text-center
+                            .from-bottom
+                                img(src='img/hero-slider/duracellogo.png' alt='Weditrade').d-inline-block.w-400.mb-4
+                                .h2.text-white.text-normal.mb-2.pt-1 Duracell Industrial batterijen
+                            a(href='#').btn.btn-primary.scale-up.delay-1 bekijk
+                        .col-md-6.padding-bottom-2x.mb-3
+                            img(src='img/hero-slider/BannerWedi02.gif' alt='klemmen').d-block.mx-auto
+    // ClientType Selection
+    section.container-fluid.padding-top-3x
+        .row.justify-content-center
+            .col-xl-4.col-lg-6.mb-30
+                div(style='background-image: url(img/banners/ClType01.jpg);').fw-section.rounded.padding-top-4x.padding-bottom-4x
+                    span(style='opacity: .35;').overlay.rounded
+                    .text-center
+                        h4.d-inline-block.h2.text-normal.text-white.text-shadow.border-default.border-left-0.border-right-0.mb-4 Ik ben een particulier.
+                        br
+                        a(href='wedi-partic.html').btn.btn-primary.margin-bottom-none Ga verder als particulier
+            .col-xl-4.col-lg-6.mb-30
+                div(style='background-image: url(img/banners/ClType02.jpg);').fw-section.rounded.padding-top-4x.padding-bottom-4x
+                    span(style='opacity: .35;').overlay.rounded
+                    .text-center
+                        h4.d-inline-block.h2.text-normal.text-white.text-shadow.border-default.border-left-0.border-right-0.mb-4 Ik heb een bedrijf.
+                        br
+                        a(href='wedi-professionals.html').btn.btn-primary.margin-bottom-none ga verder als professional
+            .col-xl-4.col-lg-6.mb-30
+                div(style='background-image: url(img/banners/ClType03.jpg);').fw-section.rounded.padding-top-4x.padding-bottom-4x
+                    span(style='opacity: .35;').overlay.rounded
+                    .text-center
+                        h4.d-inline-block.h2.text-normal.text-white.text-shadow.border-default.border-left-0.border-right-0.mb-4 Ik ben een dealer.
+                        br
+                        a(href='wedi-login.html').btn.btn-primary.margin-bottom-none log in als dealer
 

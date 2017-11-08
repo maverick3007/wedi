@@ -30,8 +30,10 @@ html(lang="en")
     //- navbar.pug template
     if isHeader
       include navbar
-    if isWediHeader
+    if isWediHomeHeader
       include wedi-navbar
+    if isWediInnerHeader
+      include wedi-navinner
     // Off-Canvas Wrapper
     .offcanvas-wrapper
 
