@@ -1,0 +1,38 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+  - var isHeader = false
+  - var isFooter = false
+  - var isWediHomeHeader = true
+  - var isWediFooter = true
+  - var parentMenu = 'Home'
+  - var pageTitle = 'Login / Registeer Account'
+  - var parentMenu = 'Home'
+  - var menuTitle = 'Login / Register'
+  - var breadcrumbs = [{'title': 'Home', 'link': 'wedi-index.html'}, {'title': 'Login / Registeer'}]
+
+//- Page Content
+block content
+  .container.padding-bottom-3x.mb-2
+    .row.align-items-center
+      .col-md-6
+        form(method='post').login-box
+          .row.margin-bottom-1x
+          .form-group.input-group
+            input(type='email' placeholder='Email' required).form-control
+            span.input-group-addon
+              i.icon-mail
+          .form-group.input-group
+            input(type='password' placeholder='Paswoord' required).form-control
+            span.input-group-addon
+              i.icon-lock
+          .d-flex.flex-wrap.justify-content-between.padding-bottom-1x
+            label.custom-control.custom-checkbox
+              input(type='checkbox' checked).custom-control-input
+              span.custom-control-indicator
+              span.custom-control-description onthoud mij
+            a(href='account-password-recovery.html').navi-link Paswoord vergeten ?
+          .text-center.text-sm-right
+            button(type='submit' class='btn btn-primary margin-bottom-none') Login
+

@@ -1,0 +1,57 @@
+// Navbar
+// Remove "navbar-sticky" class to make navigation bar scrollable with the page.
+header()&attributes(isGhostHeader ? {'class': ['navbar', 'navbar-sticky', 'navbar-ghost']} : {'class': ['navbar', 'navbar-sticky']})
+
+  // Search
+  form(method='get').site-search
+    input(type='text', name='site_search' placeholder='Type to search...')
+    .search-tools
+      span.clear-search Clear
+      span.close-search
+        i.icon-cross
+
+  .site-branding
+    .inner
+
+      // Off-Canvas Toggle (#mobile-menu)
+      a(href='#mobile-menu-wedi' data-toggle='offcanvas').offcanvas-toggle.menu-toggle
+      
+      // Site Logo
+      if isGhostHeader
+        a()&attributes(isNestedFile ? {'href': '../wedi-index.html'} : {'href': 'wedi-index.html'}).site-logo.light-logo
+          +image('img/logo/wedi-logo2.gif', 'Weditrade') 
+        a()&attributes(isNestedFile ? {'href': '../wedi-index.html'} : {'href': 'wedi-index.html'}).site-logo.logo-stuck
+          +image('img/logo/wedi-logo2.gif', 'Weditrade')
+      else
+        a()&attributes(isNestedFile ? {'href': '../wedi-index.html'} : {'href': 'wedi-index.html'}).site-logo
+          +image('img/logo/wedi-logo2.gif', 'Weditrade')
+  
+  //-Site Menu
+  include menu-partic
+
+  // Toolbar
+  .toolbar
+    .inner
+      .tools
+        .search
+          i.icon-search
+        .account
+          a()&attributes(isNestedFile ? {'href': '../account-orders.html'} : {'href': 'account-orders.html'})
+          i.icon-head
+          ul.toolbar-dropdown
+            li.sub-menu-user
+              .user-info
+                h6.user-name nik@ankabs.be
+            +submenu-item('#', 'Profiel')
+            +submenu-item('#', 'Bestellingen')
+            li.sub-menu-separator
+            li
+              a(href='#') 
+                i.icon-unlock
+                | Logout
+        .cart
+          a()&attributes(isNestedFile ? {'href': '../cart.html'} : {'href': 'cart.html'})
+          i.icon-bag
+          span.count 3
+          span.subtotal €289.68
+          

@@ -1,0 +1,106 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+  - var isPageTitle = false
+  - var isHeader = false
+  - var isFooter = false
+  - var isWediInnerHeader = true
+  - var isWediFooter = true
+  - var parentMenu = 'Home'
+  - var menuTitle = 'Featured Products Slider'
+
+//- Page Content
+block content
+
+    // Main Slider
+    section.hero-slider(style='background-image: url(img/hero-slider/BannerProf.png);')
+        .owl-carousel.large-controls.dots-inside(data-owl-carousel='{ "nav": true, "dots": true, "loop": true, "autoplay": true, "autoplayTimeout": 7000 }')
+
+    // Cats
+    section.container.padding-top-3x
+        h3.text-center.mb-30 Onze Catalogus
+        .row
+            .col-md-4.col-sm-6
+                .card.mb-30
+                a(href='shop-grid-ls.html').card-img-tiles
+                    .inner
+                    .main-img
+                        img(src='img/shop/prodcats/HGRA.jpg' alt='Category')
+                .card-body.text-center
+                    h4.card-title Slangklemmen
+                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
+            .col-md-4.col-sm-6
+                .card.mb-30
+                a(href='shop-grid-ls.html').card-img-tiles
+                    .inner
+                    .main-img
+                        img(src='img/shop/prodcats/HGRB.jpg' alt='Category')
+                .card-body.text-center
+                    h4.card-title Kabelbinders
+                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
+            .col-md-4.col-sm-6
+                .card.mb-30
+                a(href='shop-grid-ls.html').card-img-tiles
+                    .inner
+                    .main-img
+                        img(src='img/shop/prodcats/HGRC.jpg' alt='Category')
+                .card-body.text-center
+                    h4.card-title Cable Connect and Protect
+                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
+        .row
+            .col-md-4.col-sm-6
+                .card.mb-30
+                a(href='shop-grid-ls.html').card-img-tiles
+                    .inner
+                    .main-img
+                        img(src='img/shop/prodcats/HGRD.jpg' alt='Category')
+                .card-body.text-center
+                    h4.card-title Klemmen beugels en clips
+                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
+            .col-md-4.col-sm-6
+                .card.mb-30
+                a(href='shop-grid-ls.html').card-img-tiles
+                    .inner
+                    .main-img
+                        img(src='img/shop/prodcats/HGRE.jpg' alt='Category')
+                .card-body.text-center
+                    h4.card-title Wartels, moeren en stoppen
+                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
+            .col-md-4.col-sm-6
+                .card.mb-30
+                a(href='shop-grid-ls.html').card-img-tiles
+                    .inner
+                    .main-img
+                        img(src='img/shop/prodcats/HGRF.jpg' alt='Category')
+                .card-body.text-center
+                    h4.card-title Kabeldozen inbouwdozen, verdeelkasten
+                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
+        .row
+            .col-md-4.col-sm-6
+                .card.mb-30
+                a(href='shop-grid-ls.html').card-img-tiles
+                    .inner
+                    .main-img
+                        img(src='img/shop/prodcats/HGRG.jpg' alt='Category')
+                .card-body.text-center
+                    h4.card-title Tools voor sanitair en electro
+                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
+            .col-md-4.col-sm-6
+                .card.mb-30
+                a(href='shop-grid-ls.html').card-img-tiles
+                    .inner
+                    .main-img
+                        img(src='img/shop/prodcats/HGRH.jpg' alt='Category')
+                .card-body.text-center
+                    h4.card-title Aardingsmateriaal
+                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk
+            .col-md-4.col-sm-6
+                .card.mb-30
+                a(href='shop-grid-ls.html').card-img-tiles
+                    .inner
+                    .main-img
+                        img(src='img/shop/prodcats/HGRI.jpg' alt='Category')
+                .card-body.text-center
+                    h4.card-title Kruisbeugels en buisbeugeltechniek
+                    a(href='shop-grid-ls.html').btn.btn-outline-primary.btn-sm Bekijk

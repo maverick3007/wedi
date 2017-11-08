@@ -1,0 +1,20 @@
+// Main Navigation
+nav.site-menu
+  ul
+    li()&attributes((parentMenu === 'Home') ? {'class': 'has-megamenu active'} : {'class': 'has-megamenu'})
+      +menu-link('#', 'Home')
+
+    li()&attributes((parentMenu === 'Catalogus') ? {'class': 'active'} : '')
+      +menu-link('#', 'Catalogus')
+      ul.sub-menu
+        li()&attributes((menuTitle === 'Address' || menuTitle === 'Shipping' || menuTitle === 'Payment' || menuTitle === 'Review' || menuTitle === 'Complete') ? {'class': 'active has-children'} : {'class': 'has-children'})
+          +menu-link('#', 'Slangklemmen')
+          ul.sub-menu              
+            +submenu-item('#', 'Volle band')
+            +submenu-item('#', 'Perfo-band')
+            +submenu-item('#', 'Mini')
+            +submenu-item('#', 'Verende slangclipsen')
+            +submenu-item('#', 'P-clipsen DIN 3016')
+    li()&attributes((parentMenu === 'Over Ons') ? {'class': 'active'} : '')
+      +menu-link('#', 'Over Ons')
+      

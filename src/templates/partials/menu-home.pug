@@ -1,0 +1,7 @@
+// Main Navigation
+nav.site-menu
+  ul
+    li()&attributes((parentMenu === 'Home') ? {'class': 'has-megamenu active'} : {'class': 'has-megamenu'})
+      +menu-link('#', 'Home')
+    li()&attributes((parentMenu === 'Over Ons') ? {'class': 'has-megamenu active'} : {'class': 'has-megamenu'})
+      +menu-link('#', 'Over Ons')
