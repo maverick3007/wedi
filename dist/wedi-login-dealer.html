@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Unishop | Universal E-Commerce Template
+    <title>Dealer Login / Registeer Account
     </title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="Unishop - Universal E-Commerce Template">
@@ -110,7 +110,7 @@
         <ul class="menu">
           <li class="has-children active"><span><a href="index.html"><span>Home</span></a><span class="sub-menu-toggle"></span></span>
             <ul class="offcanvas-submenu">
-                <li class="active"><a href="index.html">Featured Products Slider</a></li>
+                <li><a href="index.html">Featured Products Slider</a></li>
                 <li><a href="home-featured-categories.html">Featured Categories</a></li>
                 <li><a href="home-collection-showcase.html">Products Collection Showcase</a></li>
             </ul>
@@ -396,62 +396,116 @@
     </header>
     <!-- Off-Canvas Wrapper-->
     <div class="offcanvas-wrapper">
+      <!-- Page Title-->
+      <div class="page-title">
+        <div class="container">
+          <div class="column">
+            <h1>Dealer Login / Registeer Account</h1>
+          </div>
+          <div class="column">
+            <ul class="breadcrumbs">
+              <li><a href="wedi-index.html">Home</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li>Dealer Login / Registeer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- Page Content-->
-      <!-- Main Slider-->
-      <section class="hero-slider" style="background-image: url(img/hero-slider/AdobeStock_99790554_Preview.jpeg);">
-        <div class="owl-carousel large-controls dots-inside" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 7000 }">
-          <div class="item">
-            <div class="container padding-top-3x">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-lg-5 col-md-6 padding-bottom-2x text-md-left text-center">
-                  <div class="from-bottom"><img class="d-inline-block w-400 mb-4" src="img/hero-slider/logowedi.png" alt="Weditrade">
-                    <div class="h2 text-white text-normal mb-2 pt-1">Assortimentdozen slangklemmen</div>
-                  </div><a class="btn btn-primary scale-up delay-1" href="#">bekijk</a>
-                </div>
-                <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="img/hero-slider/BannerWedi01.gif" alt="klemmen"></div>
+      <div class="container padding-bottom-3x mb-2">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <form class="login-box" method="post">
+              <div class="row margin-bottom-1x"></div>
+              <div class="form-group input-group">
+                <input class="form-control" type="email" placeholder="Email" required><span class="input-group-addon"><i class="icon-mail"></i></span>
               </div>
-            </div>
+              <div class="form-group input-group">
+                <input class="form-control" type="password" placeholder="Paswoord" required><span class="input-group-addon"><i class="icon-lock"></i></span>
+              </div>
+              <div class="d-flex flex-wrap justify-content-between padding-bottom-1x">
+                <label class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" checked><span class="custom-control-indicator"></span><span class="custom-control-description">onthoud mij</span>
+                </label><a class="navi-link" href="account-password-recovery.html">Paswoord vergeten ?</a>
+              </div>
+              <div class="text-center text-sm-right">
+                <button class="btn btn-primary margin-bottom-none" type="submit">Login</button>
+              </div>
+            </form>
           </div>
-          <div class="item">
-            <div class="container padding-top-3x">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-lg-5 col-md-6 padding-bottom-2x text-md-left text-center">
-                  <div class="from-bottom"><img class="d-inline-block w-400 mb-4" src="img/hero-slider/duracellogo.png" alt="Weditrade">
-                    <div class="h2 text-white text-normal mb-2 pt-1">Duracell Industrial batterijen</div>
-                  </div><a class="btn btn-primary scale-up delay-1" href="#">bekijk</a>
+          <div class="col-md-6">
+            <div class="padding-top-3x hidden-md-up"></div>
+            <h3 class="margin-bottom-1x">Registreer als dealer.</h3>
+            <p>Na het doorsturen van onderstaand formulier contacteren wij u zo snel mogelijk.</p>
+            <form class="row" method="post">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-fn">Naam</label>
+                  <input class="form-control" type="text" id="reg-fn" required>
                 </div>
-                <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="img/hero-slider/BannerWedi02.gif" alt="klemmen"></div>
               </div>
-            </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-ln">Bedrijfsnaam</label>
+                  <input class="form-control" type="text" id="reg-ln" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-email">E-mail</label>
+                  <input class="form-control" type="email" id="reg-email" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-phone">Telefoonnummer</label>
+                  <input class="form-control" type="text" id="reg-phone" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-address">Adres</label>
+                  <input class="form-control" type="email" id="reg-address" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-postalcode">Postcode</label>
+                  <input class="form-control" type="text" id="reg-postalcode" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-city">Plaats</label>
+                  <input class="form-control" type="email" id="reg-city" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-vat">BTW nummer</label>
+                  <input class="form-control" type="text" id="reg-vat" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-pass">Paswoord</label>
+                  <input class="form-control" type="password" id="reg-pass" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="reg-pass-confirm">Herhaal Paswoord</label>
+                  <input class="form-control" type="password" id="reg-pass-confirm" required>
+                </div>
+              </div>
+              <div class="col-12 text-center text-sm-right">
+                <button class="btn btn-primary margin-bottom-none" type="submit">Registreer</button>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
-      <!-- ClientType Selection-->
-      <section class="container-fluid padding-top-3x">
-        <div class="row justify-content-center">
-          <div class="col-xl-4 col-lg-6 mb-30">
-            <div class="fw-section rounded padding-top-4x padding-bottom-4x" style="background-image: url(img/banners/ClType01.jpg);"><span class="overlay rounded" style="opacity: .35;"></span>
-              <div class="text-center">
-                <h4 class="d-inline-block h2 text-normal text-white text-shadow border-default border-left-0 border-right-0 mb-4">Ik ben een particulier.</h4><br><a class="btn btn-primary margin-bottom-none" href="wedi-partic.html">Ga verder als particulier</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 mb-30">
-            <div class="fw-section rounded padding-top-4x padding-bottom-4x" style="background-image: url(img/banners/ClType02.jpg);"><span class="overlay rounded" style="opacity: .35;"></span>
-              <div class="text-center">
-                <h4 class="d-inline-block h2 text-normal text-white text-shadow border-default border-left-0 border-right-0 mb-4">Ik heb een bedrijf.</h4><br><a class="btn btn-primary margin-bottom-none" href="wedi-professionals.html">ga verder als professional</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 mb-30">
-            <div class="fw-section rounded padding-top-4x padding-bottom-4x" style="background-image: url(img/banners/ClType03.jpg);"><span class="overlay rounded" style="opacity: .35;"></span>
-              <div class="text-center">
-                <h4 class="d-inline-block h2 text-normal text-white text-shadow border-default border-left-0 border-right-0 mb-4">Ik ben een dealer.</h4><br><a class="btn btn-primary margin-bottom-none" href="wedi-login-dealer.html">log in als dealer</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
       <!-- Site Footer-->
       <footer class="site-footer">
         <div class="container">

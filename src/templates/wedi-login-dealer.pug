@@ -1,0 +1,86 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+  - var isHeader = false
+  - var isFooter = false
+  - var isWediHomeHeader = true
+  - var isWediFooter = true
+  - var parentMenu = 'Home'
+  - var pageTitle = 'Dealer Login / Registeer Account'
+  - var parentMenu = 'Home'
+  - var menuTitle = 'Dealer Login / Registeer'
+  - var breadcrumbs = [{'title': 'Home', 'link': 'wedi-index.html'}, {'title': 'Dealer Login / Registeer'}]
+
+//- Page Content
+block content
+  .container.padding-bottom-3x.mb-2
+    .row.align-items-center
+      .col-md-6
+        form(method='post').login-box
+          .row.margin-bottom-1x
+          .form-group.input-group
+            input(type='email' placeholder='Email' required).form-control
+            span.input-group-addon
+              i.icon-mail
+          .form-group.input-group
+            input(type='password' placeholder='Paswoord' required).form-control
+            span.input-group-addon
+              i.icon-lock
+          .d-flex.flex-wrap.justify-content-between.padding-bottom-1x
+            label.custom-control.custom-checkbox
+              input(type='checkbox' checked).custom-control-input
+              span.custom-control-indicator
+              span.custom-control-description onthoud mij
+            a(href='account-password-recovery.html').navi-link Paswoord vergeten ?
+          .text-center.text-sm-right
+            button(type='submit' class='btn btn-primary margin-bottom-none') Login
+
+      .col-md-6
+        .padding-top-3x.hidden-md-up
+        h3.margin-bottom-1x Registreer als dealer.
+        p Na het doorsturen van onderstaand formulier contacteren wij u zo snel mogelijk.
+        form(method='post').row
+          .col-sm-6
+            .form-group
+              label(for='reg-fn') Naam
+              input(type='text' id='reg-fn' required).form-control
+          .col-sm-6
+            .form-group
+              label(for='reg-ln') Bedrijfsnaam
+              input(type='text' id='reg-ln' required).form-control
+          .col-sm-6
+            .form-group
+              label(for='reg-email') E-mail
+              input(type='email' id='reg-email' required).form-control
+          .col-sm-6
+            .form-group
+              label(for='reg-phone') Telefoonnummer
+              input(type='text' id='reg-phone' required).form-control
+          .col-sm-6
+            .form-group
+              label(for='reg-address') Adres
+              input(type='email' id='reg-address' required).form-control
+          .col-sm-6
+            .form-group
+              label(for='reg-postalcode') Postcode
+              input(type='text' id='reg-postalcode' required).form-control
+          .col-sm-6
+            .form-group
+              label(for='reg-city') Plaats
+              input(type='email' id='reg-city' required).form-control
+          .col-sm-6
+            .form-group
+              label(for='reg-vat') BTW nummer
+              input(type='text' id='reg-vat' required).form-control
+          .col-sm-6
+            .form-group
+              label(for='reg-pass') Paswoord
+              input(type='password' id='reg-pass' required).form-control
+          .col-sm-6
+            .form-group
+              label(for='reg-pass-confirm') Herhaal Paswoord
+              input(type='password' id='reg-pass-confirm' required).form-control
+          .col-12.text-center.text-sm-right
+            button(type='submit' class='btn btn-primary margin-bottom-none') Registreer
+

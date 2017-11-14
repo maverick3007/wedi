@@ -31,9 +31,13 @@ html(lang="en")
     if isHeader
       include navbar
     if isWediHomeHeader
+      include wedi-topbar
       include wedi-navbar
+
     if isWediInnerHeader
+      include wedi-topbar
       include wedi-navinner
+
     // Off-Canvas Wrapper
     .offcanvas-wrapper
 
