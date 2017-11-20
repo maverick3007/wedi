@@ -14,30 +14,51 @@ append config
 block content
 
     // Main Slider
-    section.hero-slider(style='background-image: url(img/hero-slider/AdobeStock_99790554_Preview.jpeg);')
+    section.hero-slider
         .owl-carousel.large-controls.dots-inside(data-owl-carousel='{ "nav": true, "dots": true, "loop": true, "autoplay": true, "autoplayTimeout": 7000 }')
-            .item
+            .item.hero-slider(style='background-image: url(img/hero-slider/Cat1.jpg);')
                 .container.padding-top-3x
                     .row.justify-content-center.align-items-center
                         .col-lg-5.col-md-6.padding-bottom-2x.text-md-left.text-center
                             .from-bottom
                                 img(src='img/hero-slider/logowedi.png' alt='Weditrade').d-inline-block.w-400.mb-4
-                                .h2.text-white.text-normal.mb-2.pt-1 Assortimentdozen slangklemmen
-                            a(href='#').btn.btn-primary.scale-up.delay-1 bekijk
+                            h1.scale-up.delay-1.bg-success.text-white Montage- en bevestigingsmateriaal voor de elektrotechnische installateur 
                         .col-md-6.padding-bottom-2x.mb-3
-                            img(src='img/hero-slider/BannerWedi01.gif' alt='klemmen').d-block.mx-auto
-            .item
+            .item.hero-slider(style='background-image: url(img/hero-slider/Cat2.jpg);')
                 .container.padding-top-3x
                     .row.justify-content-center.align-items-center
                         .col-lg-5.col-md-6.padding-bottom-2x.text-md-left.text-center
                             .from-bottom
-                                img(src='img/hero-slider/duracellogo.png' alt='Weditrade').d-inline-block.w-400.mb-4
-                                .h2.text-white.text-normal.mb-2.pt-1 Duracell Industrial batterijen
-                            a(href='#').btn.btn-primary.scale-up.delay-1 bekijk
+                                img(src='img/hero-slider/logowedi.png' alt='Weditrade').d-inline-block.w-400.mb-4
+                            h1.scale-up.delay-1.bg-success.text-white Montage- en bevestigingsmateriaal voor de sanitaire installateur 
                         .col-md-6.padding-bottom-2x.mb-3
-                            img(src='img/hero-slider/BannerWedi02.gif' alt='klemmen').d-block.mx-auto
+            .item.hero-slider(style='background-image: url(img/hero-slider/Cat3.jpg);')
+                .container.padding-top-3x
+                    .row.justify-content-center.align-items-center
+                        .col-lg-5.col-md-6.padding-bottom-2x.text-md-left.text-center
+                            .from-bottom
+                                img(src='img/hero-slider/logowedi.png' alt='Weditrade').d-inline-block.w-400.mb-4
+                            h1.scale-up.delay-1.bg-success.text-white Montage- en bevestigingsmateriaal voor de HVAC en SPRINKLER installateur 
+                        .col-md-6.padding-bottom-2x.mb-3
+            .item.hero-slider(style='background-image: url(img/hero-slider/Cat4.jpg);')
+                .container.padding-top-3x
+                    .row.justify-content-center.align-items-center
+                        .col-lg-5.col-md-6.padding-bottom-2x.text-md-left.text-center
+                            .from-bottom
+                                img(src='img/hero-slider/logowedi.png' alt='Weditrade').d-inline-block.w-400.mb-4
+                            h1.scale-up.delay-1.bg-success.text-white Personal hardware, GSM- ,safety-, visibility-, pet-, bike- and outdoor equipment    
+                        .col-md-6.padding-bottom-2x.mb-3
+            .item.hero-slider(style='background-image: url(img/hero-slider/Cat5.jpg);')
+                .container.padding-top-3x
+                    .row.justify-content-center.align-items-center
+                        .col-lg-5.col-md-6.padding-bottom-2x.text-md-left.text-center
+                            .from-bottom
+                                img(src='img/hero-slider/logowedi.png' alt='Weditrade').d-inline-block.w-400.mb-4
+                            h1.scale-up.delay-1.bg-success.text-white Small consumer electronics  
+                        .col-md-6.padding-bottom-2x.mb-3                        
+
     // ClientType Selection
-    section.container-fluid.padding-top-3x
+    section.container.padding-top-3x
         .row.justify-content-center
             .col-xl-4.col-lg-6.mb-30
                 div(style='background-image: url(img/banners/ClType01.jpg);').fw-section.rounded.padding-top-4x.padding-bottom-4x
@@ -60,4 +81,114 @@ block content
                         h4.d-inline-block.h2.text-normal.text-white.text-shadow.border-default.border-left-0.border-right-0.mb-4 Ik ben een dealer.
                         br
                         a(href='wedi-login-dealer.html').btn.btn-primary.margin-bottom-none log in als dealer
+    
+    // Customercats 1
+    section.container-fluid.padding-top-3x
+        .row.justify-content-center
+            .col-xl-5.col-lg-6.mb-30
+                .rounded.bg-faded.position-relative.padding-top-3x.padding-bottom-3x
+                    span(style='top: 24px; left: 24px;')
+                        .text-center
+                            h4.h3.text-normal.mb-4 Montage- en bevestigingsmateriaal voor de elektrotechnische installateur                     
+                            br
+                            .owl-carousel.dots-outside(data-owl-carousel='{ "nav": true, "dots": true, "loop": false }')
+                                img(src='./img/products/HGRB.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRC.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRD.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRE.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRF.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRG.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRH.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRJ.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRK.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRL.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+
+            div(style='min-height: 300px;').col-xl-5.col-lg-6.mb-30
+                div(style='background-image: url(img/banners/klantensoort1.jpg);').img-cover.rounded
+
+    // Customercats 2
+    section.container-fluid
+        .row.justify-content-center
+            .col-xl-5.col-lg-6.mb-30
+                .rounded.bg-faded.position-relative.padding-top-3x.padding-bottom-3x
+                    span(style='top: 24px; left: 24px;')
+                        .text-center
+                            h4.h3.text-normal.mb-4 Montage- en bevestigingsmateriaal voor de sanitaire installateur                     
+                            br
+                            .owl-carousel.dots-outside(data-owl-carousel='{ "nav": true, "dots": true, "loop": false }')
+                                img(src='./img/products/HGRA.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRC.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRD.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRI.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRM.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRN.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRG.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+            div(style='min-height: 300px;').col-xl-5.col-lg-6.mb-30
+                div(style='background-image: url(img/banners/klantensoort2.jpg);').img-cover.rounded
+
+
+    // Customercats 3
+    section.container-fluid
+        .row.justify-content-center
+            .col-xl-5.col-lg-6.mb-30
+                .rounded.bg-faded.position-relative.padding-top-3x.padding-bottom-3x
+                    span(style='top: 24px; left: 24px;')
+                        .text-center
+                            h4.h3.text-normal.mb-4 Montage- en bevestigingsmateriaal voor de HVAC en SPRINKLER installateur                     
+                            br
+                            .owl-carousel.dots-outside(data-owl-carousel='{ "nav": true, "dots": true, "loop": false }')
+                                img(src='./img/products/HGRD.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRI.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRM.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRG.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+            div(style='min-height: 300px;').col-xl-5.col-lg-6.mb-30
+                div(style='background-image: url(img/banners/klantensoort3.jpg);').img-cover.rounded
+
+    // Customercats 4
+    section.container-fluid
+        .row.justify-content-center
+            .col-xl-5.col-lg-6.mb-30
+                .rounded.bg-faded.position-relative.padding-top-3x.padding-bottom-3x
+                    span(style='top: 24px; left: 24px;')
+                        .text-center
+                            h4.h3.text-normal.mb-4 Personal hardware, GSM- ,safety-, visibility-, pet-, bike- and outdoor equipment                     
+                            br
+                            .owl-carousel.dots-outside(data-owl-carousel='{ "nav": true, "dots": true, "loop": false }')
+                                img(src='./img/products/HGRP.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRR.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+            div(style='min-height: 300px;').col-xl-5.col-lg-6.mb-30
+                div(style='background-image: url(img/banners/klantensoort4.jpg);').img-cover.rounded
+
+    // Customercats 5
+    section.container-fluid
+        .row.justify-content-center
+            .col-xl-5.col-lg-6.mb-30
+                .rounded.bg-faded.position-relative.padding-top-3x.padding-bottom-3x
+                    span(style='top: 24px; left: 24px;')
+                        .text-center
+                            h4.h3.text-normal.mb-4 Small consumer electronics                     
+                            br
+                            .owl-carousel.dots-outside(data-owl-carousel='{ "nav": true, "dots": true, "loop": false }')
+                                img(src='./img/products/HGRO.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRP.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRR.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+                                img(src='./img/products/HGRS.gif', alt='Image', style='min-height:250px !important; min-width:346px;max-height:350px !important; max-width:484px; margin-left:auto; margin-right:auto')
+            div(style='min-height: 300px;').col-xl-5.col-lg-6.mb-30
+                div(style='background-image: url(img/banners/klantensoort5.jpg);').img-cover.rounded
+
+    // Customercats 6
+    section.container-fluid
+        .row.justify-content-center
+            .col-xl-5.col-lg-6.mb-30
+                .rounded.bg-faded.position-relative.padding-top-3x.padding-bottom-3x
+                    span(style='top: 24px; left: 24px;')
+                        .text-center
+                            h4.h3.text-normal.mb-4 Customized retail concepts                     
+                            br
+                            a(href='#').btn.btn-primary.margin-bottom-none Bekijk producten
+            div(style='min-height: 300px;').col-xl-5.col-lg-6.mb-30
+                div(style='background-image: url(img/banners/klantensoort6.jpg);').img-cover.rounded
+
+
+
 
